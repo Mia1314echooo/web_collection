@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pars coder || Parallax Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="Sushi Market Logo" />
+        Sushi Market
+      </a>
+      <ul class="navlist">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <section class="parallax-home">
+      <img src="images/Home-Images/sky.png" alt="sky_background" id="sky" />
+      <img src="images/Home-Images/moon.png" alt="moon" id="moon" />
+      <img src="images/Home-Images/train.png" alt="train" id="train" />
+      <img src="images/Home-Images/water.png" alt="water" id="water" />
+      <img src="images/Home-Images/rail.png" alt="rail" id="rail" />
+      <h1 id="text">Welcome to Sushi Market</h1>
+    </section>
+    <section class="about" id="about">
+      <div class="info-box">
+        <h2>About Us</h2>
+        <p>
+          Fresh, authentic sushi crafted daily with premium ingredients. Quick
+          service, cozy ambiance, and unbeatable value for an unforgettable
+          dining experience!
+        </p>
+        <a href="#" class="btn">Read More!</a>
+      </div>
+      <img
+        src="images/About-Images/waterfall.png"
+        alt="waterfall"
+        id="waterfall"
+        class="waterfall"
+      />
+      <img
+        src="images/About-Images/desert-moon.gif"
+        alt="desert-moon"
+        id="desert-moon"
+      />
+      <img src="images/About-Images/desert-sky.png" alt="desert-sky" />
+
+      <img src="images/About-Images/man.png" alt="man" id="man" />
+
+      <div id="progress">
+        <span id="progress-value">
+          <i class="bx bx-chevrons-up"></i>
+        </span>
+      </div>
+    </section>
+    <section class="products" id="products">
+      <h2>Menu</h2>
+      <!-- Product Card -->
+      <div class="product-card">
+        <!-- Card -->
+        <div class="card">
+          <img src="images/products/Salmon.png" alt="Salmon" />
+          <div class="info">
+            <div class="price-name">
+              <h3>Salmon</h3>
+              <span>$10</span>
+            </div>
+            <p>
+              Fresh, rich in omega-3, perfect for grilling or baking with a
+              tender, flaky texture.
+            </p>
+            <a href="#" class="btn">Go Shop</a>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="card">
+          <img src="images/products/Snapper.png" alt="Snapper" />
+          <div class="info">
+            <div class="price-name">
+              <h3>Tamagoyaki</h3>
+              <span>$8</span>
+            </div>
+            <p>
+              A sweet and savory Japanese omelette, rolled to create layers of
+              flavor and texture.
+            </p>
+            <a href="#" class="btn">Go Order </a>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="card">
+          <img src="images/products/Swordfish.png" alt="Swordfish" />
+          <div class="info">
+            <div class="price-name">
+              <h3>Shrimp</h3>
+              <span>$12</span>
+            </div>
+            <p>
+              Fresh, sweet, and versatile, perfect for grilling or sautéing with
+              a tender, succulent texture.
+            </p>
+            <a href="#" class="btn">Go Order</a>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="card">
+          <img src="images/products/Tuna.png" alt="Tuna" />
+          <div class="info">
+            <div class="price-name">
+              <h3>Tuna</h3>
+              <span>$10</span>
+            </div>
+            <p>
+              Rich in flavor, high-protein, versatile for sushi, searing, or
+              salads, with tender texture.
+            </p>
+            <a href="#" class="btn">Go Order</a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">© 2024 umic.project All rights reserved.</p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
