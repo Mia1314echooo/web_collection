@@ -21,7 +21,6 @@
   background-color: #5a2a1d;
   border: 5rem;
 }
-
 section img {
   height: 100%; /* Stretch to fill the section vertically */
 }
@@ -277,6 +276,141 @@ section {
   font-weight: 500;
 }
 
+/*---Game --*/
+.game {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#score {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2em;
+  font-weight: 900;
+}
+#title {
+  top: 10%;
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  font-weight: 600;
+  text-align: center;
+  transition: opacity 2s;
+}
+
+#introduction {
+  top: 20%;
+  width: 60%;
+  position: absolute;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: center;
+  transition: opacity 2s;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+}
+
+#restart {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2em;
+  display: none;
+  cursor: pointer;
+}
+
+#perfect {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+#youtube,
+#youtube-card {
+  display: none;
+}
+
+@media (min-height: 425px) {
+  /** Youtube logo by https://codepen.io/alvaromontoro */
+  #youtube {
+    z-index: 2;
+    display: block;
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgb(209, 4, 4);
+    border-radius: 50% / 11%;
+    transform: scale(0.8);
+    transition: transform 0.5s;
+  }
+
+  #youtube:hover,
+  #youtube:focus {
+    transform: scale(0.9);
+  }
+
+  #youtube::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7.5%;
+    left: -6%;
+    width: 112%;
+    height: 85%;
+    background: red;
+    border-radius: 9% / 50%;
+  }
+
+  #youtube::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 45px;
+    height: 30px;
+    border: 15px solid transparent;
+    box-sizing: border-box;
+    border-left: 30px solid white;
+  }
+
+  #youtube span {
+    font-size: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  #youtube:hover + #youtube-card {
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    padding: 25px 25px 25px 130px;
+    width: 300px;
+    background-color: white;
+  }
+}
+
 #progress {
   position: fixed;
   bottom: 60px;
@@ -314,4 +448,53 @@ section {
   padding: 0.5rem 0;
   text-align: center;
   color: #9a9a9a;
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .info-box {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 1%;
+    width: 80%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    height: auto; /* Ensures the height adjusts to fit the content */
+    overflow: hidden; /* Prevents content from spilling out */
+    z-index: 1004;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .parallax-home #text {
+    font-size: 1.2rem;
+  }
+
+  .about .info-box {
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    width: 240;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    height: auto; /* Ensures the height adjusts to fit the content */
+    overflow: hidden; /* Prevents content from spilling out */
+    z-index: 1004;
+  }
 }

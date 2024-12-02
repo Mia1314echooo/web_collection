@@ -24,10 +24,10 @@
       </ul>
     </header>
     <!-- Background Music -->
-    <audio autoplay loop>
+    <audio id="background-audio" autoplay loop>
       <source src="japanese-162771.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
     </audio>
+
     <!-- Your content goes here -->
     <section class="parallax-home">
       <img src="images/Home-Images/sky.png" alt="sky_background" id="sky" />
@@ -135,7 +135,16 @@
       </div>
       <p class="copyright">© 2024 umic.project All rights reserved.</p>
     </section>
-
+    <section class="game">
+      <div class="container">
+        <div id="score"></div>
+        <canvas id="game" width="375" height="375"></canvas>
+        <div id="title"><h2>Game</h2></div>
+        <div id="introduction">Hold down the mouse to stretch out a stick</div>
+        <div id="perfect">DOUBLE SCORE</div>
+        <button id="restart">RESTART</button>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
